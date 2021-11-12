@@ -1,0 +1,25 @@
+// **** MIXINS **** //
+// ================ //
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+};
+
+@mixin respoXS {
+    @media screen and (max-width: 600px){
+        @content
+    }
+};
+
+@mixin respoM {
+    @media screen and (max-width: 800px){
+        @content
+    }
+};
+
+@mixin respoXL {
+    @media screen and (max-width: 1000px){
+        @content
+    }
+};

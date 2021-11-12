@@ -1,0 +1,105 @@
+@keyframes function {}
+*, *::after, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.burger-carre {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+.burger-carre .burger-circle {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-carre .burger-circle .burger-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.burger-carre .burger-circle .burger-lines .burger-line {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transition: 0.3s;
+}
+.burger-carre .burger-circle .burger-lines .burger-line:nth-child(1) {
+  transform: rotate(90deg);
+}
+.burger-carre:hover .burger-lines .burger-line {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  width: 69px;
+  height: 0;
+}
+
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-menu {
+  list-style-type: none;
+}
+nav .nav-menu .item-nav {
+  text-align: center;
+}
+nav .nav-menu .item-nav a {
+  font-size: 4vw;
+  text-align: center;
+  text-decoration: none;
+  filter: blur(2px);
+  transition: 0.6s;
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #333;
+  font-family: "Abril Fatface", cursive;
+}
+nav .nav-menu .item-nav a:hover {
+  filter: blur(0px);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 999;
+}
+header .lines .line {
+  position: relative;
+  height: 2px;
+  margin-bottom: 20px;
+  background: #333;
+}
+header .lines .l1 {
+  width: 250px;
+}
+header .lines .l2 {
+  width: 140px;
+}
+header .lines .l3 {
+  width: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */

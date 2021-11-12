@@ -1,0 +1,28 @@
+// **** HEADER **** //
+// ================ //
+
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 999;
+    .lines{
+        .line{
+            position: relative;
+            height: 2px;
+            margin-bottom: 20px;
+            background: $mainColor;
+        }
+        .l1 {
+            width: 250px;
+        }
+        .l2 {
+            width: 140px;
+        }
+        .l3{
+            width: 60px;
+        }
+    }
+}
