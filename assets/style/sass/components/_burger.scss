@@ -1,6 +1,27 @@
 // **** BURGER **** //
 // ================ //
 
+.nav-burger-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nav-burger{
+    display: none;
+}
+.nav-burger.active{
+    display: block;
+    .item-nav-burger{
+        font-family: $secondFont;
+        list-style-type: none;
+        font-size: 1.5rem;
+        text-align: end;
+        animation: show-burger 0.3s forwards;
+        a{
+            text-decoration: none;
+        }
+    }
+}
 .burger-carre{
     @include size(50px, 50px);
     border: 2px solid $mainColor;

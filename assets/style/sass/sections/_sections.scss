@@ -1,0 +1,23 @@
+// **** STRESS **** //
+// ================ //
+
+section{
+    margin: 150px 20vw;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 3vw;
+    }
+    p{
+        width: 500px;
+        margin: 50px 0;
+        font-family: $secondFont;
+        font-size: 1.5em;
+        &:nth-child(2){
+            align-self: center;
+        }
+        &:nth-child(3){
+            align-self: flex-end;
+        }   
+    }
+}

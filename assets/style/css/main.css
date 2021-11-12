@@ -1,12 +1,41 @@
-@keyframes function {}
+@keyframes show-burger {
+  to {
+    padding-top: 10px;
+  }
+}
 *, *::after, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 62.5%;
+}
+
+.nav-burger-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-burger {
+  display: none;
+}
+
+.nav-burger.active {
+  display: block;
+}
+.nav-burger.active .item-nav-burger {
+  font-family: "Source Sans Pro", sans-serif;
+  list-style-type: none;
+  font-size: 1.5rem;
+  text-align: end;
+  animation: show-burger 0.3s forwards;
+}
+.nav-burger.active .item-nav-burger a {
+  text-decoration: none;
 }
 
 .burger-carre {
@@ -50,20 +79,41 @@ body {
   height: 0;
 }
 
-nav {
+a {
+  color: #333;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+}
+a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  margin: 2px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: #333;
+  transition: width 0.2s ease-out;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.nav-center {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-nav .nav-menu {
+.nav-center .nav-menu {
   list-style-type: none;
 }
-nav .nav-menu .item-nav {
+.nav-center .nav-menu .item-nav {
   text-align: center;
 }
-nav .nav-menu .item-nav a {
+.nav-center .nav-menu .item-nav a {
   font-size: 4vw;
   text-align: center;
   text-decoration: none;
@@ -74,7 +124,7 @@ nav .nav-menu .item-nav a {
   -webkit-text-stroke-color: #333;
   font-family: "Abril Fatface", cursive;
 }
-nav .nav-menu .item-nav a:hover {
+.nav-center .nav-menu .item-nav a:hover {
   filter: blur(0px);
 }
 
@@ -88,18 +138,46 @@ header {
 }
 header .lines .line {
   position: relative;
-  height: 2px;
-  margin-bottom: 20px;
+  height: 1px;
+  margin-bottom: 30px;
   background: #333;
 }
 header .lines .l1 {
-  width: 250px;
+  width: 180px;
 }
 header .lines .l2 {
-  width: 140px;
+  width: 100px;
 }
 header .lines .l3 {
   width: 60px;
+}
+
+.show-more {
+  position: absolute;
+  right: 50px;
+  top: 85vh;
+  transform: rotate(180deg);
+}
+
+section {
+  margin: 150px 20vw;
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  font-size: 3vw;
+}
+section p {
+  width: 500px;
+  margin: 50px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+}
+section p:nth-child(2) {
+  align-self: center;
+}
+section p:nth-child(3) {
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+// **** TXT **** //
+// ============= //
+
+a{
+    color: $mainColor;
+    font-family: $secondFont;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+    &::after{
+        content: "";
+        display: block;
+        width: 0px;
+        margin: 2px auto 0 auto;
+        height: 2px;
+        border-radius: 2px;
+        background: $mainColor;
+        transition: width 0.2s ease-out;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
