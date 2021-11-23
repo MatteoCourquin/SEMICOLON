@@ -1,5 +1,5 @@
-// **** TXT **** //
-// ============= //
+// **** TYPO **** //
+// ============== //
 
 a{
     color: $mainColor;
@@ -20,4 +20,23 @@ a{
     &:hover::after{
         width: 100%;
     }
+}
+
+h2{
+    font-size: 3vw;
+    color: $mainColor;
+}
+
+p{
+    width: 500px;
+    margin: 50px 0;
+    font-family: $secondFont;
+    font-size: 2em;
+    color: $mainColor;
+    &:nth-child(2){
+        align-self: center;
+    }
+    &:nth-child(3){
+        align-self: flex-end;
+    }   
 }

@@ -3,6 +3,14 @@
     padding-top: 10px;
   }
 }
+@keyframes drop-anim {
+  from {
+    top: -110%;
+  }
+  to {
+    bottom: 130%;
+  }
+}
 *, *::after, *::after {
   margin: 0;
   padding: 0;
@@ -12,6 +20,47 @@
 
 body {
   font-size: 62.5%;
+  background-color: #171717;
+}
+
+a {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+}
+a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  margin: 2px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: white;
+  transition: width 0.2s ease-out;
+}
+a:hover::after {
+  width: 100%;
+}
+
+h2 {
+  font-size: 3vw;
+  color: white;
+}
+
+p {
+  width: 500px;
+  margin: 50px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+p:nth-child(2) {
+  align-self: center;
+}
+p:nth-child(3) {
+  align-self: flex-end;
 }
 
 .nav-burger-container {
@@ -41,13 +90,13 @@ body {
 .burger-carre {
   width: 50px;
   height: 50px;
-  border: 2px solid #333;
+  border: 2px solid white;
   cursor: pointer;
 }
 .burger-carre .burger-circle {
   width: 100%;
   height: 100%;
-  border: 2px solid #333;
+  border: 2px solid white;
   border-radius: 999px;
   display: flex;
   justify-content: center;
@@ -65,39 +114,54 @@ body {
   position: absolute;
   width: 32px;
   height: 32px;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   transition: 0.3s;
 }
 .burger-carre .burger-circle .burger-lines .burger-line:nth-child(1) {
   transform: rotate(90deg);
 }
 .burger-carre:hover .burger-lines .burger-line {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   width: 69px;
   height: 0;
 }
 
-a {
-  color: #333;
-  font-family: "Source Sans Pro", sans-serif;
-  text-decoration: none;
-  padding: 0;
-  cursor: pointer;
+.bg-drop {
+  z-index: -11;
+  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
 }
-a::after {
-  content: "";
-  display: block;
-  width: 0px;
-  margin: 2px auto 0 auto;
-  height: 2px;
-  border-radius: 2px;
-  background: #333;
-  transition: width 0.2s ease-out;
+.bg-drop .drop-line {
+  opacity: 0.5;
+  position: fixed;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  animation: drop-anim 7s 0s infinite;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.605) 75%, rgba(255, 255, 255, 0.557) 100%);
 }
-a:hover::after {
-  width: 100%;
+.bg-drop .drop-line:nth-child(1) {
+  margin-left: -25%;
+}
+.bg-drop .drop-line:nth-child(1) {
+  animation-delay: 2s;
+}
+.bg-drop .drop-line:nth-child(3) {
+  margin-left: 25%;
+}
+.bg-drop .drop-line:nth-child(3) {
+  animation-delay: 2.5s;
 }
 
 .nav-center {
@@ -121,7 +185,7 @@ a:hover::after {
   transition: 0.6s;
   color: transparent;
   -webkit-text-stroke: 2px;
-  -webkit-text-stroke-color: #333;
+  -webkit-text-stroke-color: white;
   font-family: "Abril Fatface", cursive;
 }
 .nav-center .nav-menu .item-nav a:hover {
@@ -140,7 +204,7 @@ header .lines .line {
   position: relative;
   height: 1px;
   margin-bottom: 30px;
-  background: #333;
+  background: white;
 }
 header .lines .l1 {
   width: 180px;
@@ -163,21 +227,6 @@ section {
   margin: 150px 20vw;
   display: flex;
   flex-direction: column;
-}
-section h2 {
-  font-size: 3vw;
-}
-section p {
-  width: 500px;
-  margin: 50px 0;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
-}
-section p:nth-child(2) {
-  align-self: center;
-}
-section p:nth-child(3) {
-  align-self: flex-end;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,3 +6,12 @@
         padding-top: 10px;
     }
 }
+
+@keyframes drop-anim {
+    from{
+        top: -110%;
+    }
+    to{
+        bottom: 130%;
+    }
+}
