@@ -1,12 +1,26 @@
 // **** VARIABLES **** //
 // =================== //
 
-$mainColor: white;
-$secondColor: #fff;
-$mainFont: 'Abril Fatface', cursive;
-$secondFont: 'Source Sans Pro', sans-serif;
+// Main colors
+$color-white: #fff;
+$color-black: #333;
+$color-grey: #ffffff4d;
+$color-main: linear-gradient(0.25turn, orange, red);
+$color-second: red;
 
-// :root {
-    // --variable: ...;
-    // --variable: ...;
-// }
+// Fonts 
+$font-roboto-bold: 'Roboto', bolder;
+$font-roboto-light: 'Roboto', lighter;
+
+// // Validate colors
+// $bg-alerte: #ff0000;
+// $bg-succes: #008000;
+
+// // Texts colors
+// $txt-light: #000000;
+// $txt-dark: #808080;
+
+// // Dimensions / Position
+// $radius-xl: 20px;
+// $radius-m: 10px;
+// $radius-xs: 5px;

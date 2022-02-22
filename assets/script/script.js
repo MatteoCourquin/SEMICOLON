@@ -1,50 +1,16 @@
-// **** SCRIPT **** //
-// ================ //
+var textWrapper = document.querySelector('.ml7 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-// **** Line Scroll **** //
-
-window.onload = () => {
-    window.addEventListener("scroll", () => {
-        let hauteur = document.documentElement.scrollHeight - window.innerHeight;
-        let position = window.scrollY;
-        let largeur = document.documentElement.clientWidth;
-
-        let barre = (position / hauteur) * largeur;
-
-        document.getElementById("top-barre").style.width = barre + "px";
-    });
-};
-
-
-
-// **** Burger **** //
-
-const btn = document.querySelector('.burger-menu');
-const menu = document.querySelector('.nav-burger');
-
-btn.addEventListener('click', burger);
-
-function burger(){
-    menu.classList.toggle('active');
-}
-
-
-// **** GreenSocks Anims **** //
-
-const l1 = document.querySelector('.l1');
-const l2 = document.querySelector('.l2');
-const l3 = document.querySelector('.l3');
-const links = document.querySelectorAll('.item-nav');
-
-window.addEventListener('load', () => {
-
-    const tl = gsap.timeline({paused: true});
-
-    tl
-    .staggerFrom(links, 4, {opacity: 0, ease: "power2.out"},0.3 ,0.2)
-    .from(l1, 2, {width: 0, ease: "power2.out"}, 0)
-    .from(l2, 2, {width: 0, ease: "power2.out"}, 0)
-    .from(l3, 2, {width: 0, ease: "power2.out"}, 0);
-
-    tl.play();
-})
+anime.timeline({loop: false})
+      .add({
+      targets: '.ml7 .letter',
+      translateY: ["1.1em", 0],
+      translateX: ["0.55em", 0],
+      translateZ: 0,
+      rotateZ: [180, 0],
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: function(el, i) {
+            return 900 + 50 * i;
+      }
+});

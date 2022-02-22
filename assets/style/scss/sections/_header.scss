@@ -2,34 +2,39 @@
 // ================ //
 
 header{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    position: fixed;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 999;
-    .lines{
-        .line{
-            position: relative;
-            height: 1px;
-            margin-bottom: 30px;
-            background: $mainColor;
-        }
-        .l1 {
-            width: 180px;
-        }
-        .l2 {
-            width: 100px;
-        }
-        .l3{
-            width: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-white;
+    .header-contain{
+        width: 80%;
+        min-width: 300px;
+        p{
+            margin: 30px 0;
         }
     }
 }
 
-.show-more{
-    position: absolute;
-    right: 50px;
-    top: 85vh;
-    transform: rotate(180deg);
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+
+    .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0.1em;
+        overflow: hidden;
+    }
+
+    .letter {
+        transform-origin: 0 100%;
+        display: inline-block;
+        line-height: 1em;
+    }
 }

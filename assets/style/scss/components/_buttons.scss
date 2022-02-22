@@ -1,12 +1,20 @@
 // **** BUTTONS **** //
 // ================= //
 
-// button{
-//     background: var(--...);
-//     color: var(--...);
-//     width: ...;
-//     padding: ...;
-//     margin: ...;
-//     border: none;
-//     cursor: pointer;   
-// }
+button {
+    margin-right: 10px;
+    padding: 14px 30px;
+    border: none;
+    color: $color-white;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.btn-orange{
+    background: $color-main;
+}
+.btn-transparent{
+    background: transparent;
+    border: 1px solid $color-grey;
+}

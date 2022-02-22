@@ -1,17 +1,11 @@
 // **** FUNCTIONS **** //
 // =================== //
 
-@keyframes show-burger {
-    to{
-        padding-top: 10px;
+@keyframes rotateFirstRing {
+    from {
+        transform: rotate(0deg);
     }
-}
-
-@keyframes drop-anim {
-    from{
-        top: -110%;
-    }
-    to{
-        bottom: 130%;
+    to {
+        transform: rotate(360deg);
     }
 }

@@ -1,9 +1,7 @@
 // **** ABSTRACTS **** //
 // =================== //
-@import "./abstracts/functions";
-@import "./abstracts/mixins";
-@import "./abstracts/placeholders";
 @import "./abstracts/variables";
+@import "./abstracts/functions";
 
 // **** BASE **** //
 // ============== //
@@ -13,29 +11,17 @@
 // **** COMPONENTS **** //
 // ==================== //
 @import "./components/buttons";
-@import "./components/burger";
-@import "./components/carousel";
-@import "./components/cover";
-@import "./components/bgdropdown";
-@import "./components/txt";
 
 // **** PAGES **** //
 // =============== //
 @import "./pages/page";
-@import "./pages/index";
 
 // **** SECTIONS **** //
 // ================== //
 @import "./sections/header";
-@import "./sections/sections";
+@import "./sections/nav";
+@import "./sections/section";
 @import "./sections/footer";
-
-// **** THEMES **** //
-// ================ //
-@import "./themes/theme";
-
-// **** VENDORS **** //
-// =================== //
 
 
 // sass --watch assets/style/scss/main.scss:assets/style/css/main.css

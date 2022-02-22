@@ -1,42 +1,37 @@
 // **** TYPO **** //
 // ============== //
 
-a{
-    color: $mainColor;
-    font-family: $secondFont;
+.txt-link{
     text-decoration: none;
-    padding: 0;
+    font-family: $font-roboto-bold;
+    font-size: 20px;
     cursor: pointer;
-    &::after{
-        content: "";
-        display: block;
-        width: 0px;
-        margin: 2px auto 0 auto;
-        height: 2px;
-        border-radius: 2px;
-        background: $mainColor;
-        transition: width 0.2s ease-out;
-    }
-    &:hover::after{
-        width: 100%;
+    color: $color-white;
+    
+    &:hover{
+        background: $color-main;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
+h1{
+    font-family: $font-roboto-bold;
+    color: $color-white;
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+}
 h2{
+    font-family: $font-roboto-bold;
+    color: $color-white;
     font-size: 3vw;
-    color: $mainColor;
 }
 
-p{
-    width: 500px;
-    margin: 50px 0;
-    font-family: $secondFont;
-    font-size: 2em;
-    color: $mainColor;
-    &:nth-child(2){
-        align-self: center;
-    }
-    &:nth-child(3){
-        align-self: flex-end;
-    }   
+p {
+    color: $color-grey;
+    font-family: $font-roboto-light;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
