@@ -90,18 +90,42 @@ button {
   border: 1px solid #ffffff4d;
 }
 
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about .card-student {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.about .card-student h2, .about .card-student span {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.about .card-student img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
 header {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: 15%;
   flex-direction: column;
   color: #fff;
 }
 header .header-contain {
-  width: 80%;
+  width: 70%;
   min-width: 300px;
+  max-width: 1000px;
 }
 header .header-contain p {
   margin: 30px 0;
@@ -126,21 +150,29 @@ header .header-contain p {
   line-height: 1em;
 }
 
-.nav {
+.nav-index {
   position: fixed;
-  top: 50vh;
+  top: 50%;
   right: 10px;
+  transform: translateY(-50%);
   z-index: 99;
 }
-.nav ul {
-  transform: translate(-100%, -50%);
-  position: absolute;
-  list-style: none;
-  text-align: end;
+.nav-index ul {
+  list-style-type: none;
 }
-.nav ul li {
+.nav-index ul li {
   color: grey;
   padding: 20px 0;
+  text-align: end;
+}
+
+.nav-about .back-home {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.nav-about .back-home img {
+  width: 50px;
 }
 
 section {

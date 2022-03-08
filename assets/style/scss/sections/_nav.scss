@@ -1,21 +1,35 @@
 // **** NAV **** //
 // ============= //
 
-.nav {
+.nav-index{
     position: fixed;
-    top: 50vh;
+    top: 50%;
     right: 10px;
+    transform: translateY(-50%);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 100%;
     z-index: 99;
     
     ul {
-        transform: translate(-100%, -50%);
-        position: absolute;
-        list-style: none;
-        text-align: end;
+        list-style-type: none;
 
         li {
             color: grey;
             padding: 20px 0;
+            text-align: end;
+        }
+    }
+}
+
+.nav-about{
+    .back-home{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        img{
+            width: 50px;
         }
     }
 }
