@@ -25,7 +25,7 @@ h1{
 h2{
     font-family: $font-roboto-bold;
     color: $color-white;
-    font-size: 3vw;
+    font-size: clamp(20px, 4vw, 100px);
 }
 p {
     color: $color-grey;

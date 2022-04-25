@@ -9,6 +9,12 @@ header{
     padding-left: 15%;
     flex-direction: column;
     color: $color-white;
+    .logo{
+        position: fixed;
+        width: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
     .header-contain{
         width: 70%;
         min-width: 300px;
