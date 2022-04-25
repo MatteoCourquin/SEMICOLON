@@ -1,12 +1,12 @@
 // **** ABSTRACTS **** //
 // =================== //
-@import "./abstracts/variables";
-@import "./abstracts/functions";
+@import "./abstracts/variables",
+        "./abstracts/functions";
 
 // **** BASE **** //
 // ============== //
-@import "./base/reset";
-@import "./base/typography";
+@import "./base/reset",
+        "./base/typography";
 
 // **** COMPONENTS **** //
 // ==================== //
@@ -18,10 +18,10 @@
 
 // **** SECTIONS **** //
 // ================== //
-@import "./sections/header";
-@import "./sections/nav";
-@import "./sections/section";
-@import "./sections/footer";
+@import "./sections/header",
+        "./sections/nav",
+        "./sections/section",
+        "./sections/footer";
 
 
 // sass --watch assets/style/scss/main.scss:assets/style/css/main.css
