@@ -183,6 +183,7 @@ header .header-contain p {
 
 section {
   height: 100vh;
+  min-height: min-content;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -228,6 +229,11 @@ section p:nth-child(3) {
   section p:nth-child(3) {
     align-self: center;
   }
+}
+
+.title, .text1, .text2 {
+  opacity: 0;
+  transform: translateY(-30px);
 }
 
 /*# sourceMappingURL=main.css.map */
