@@ -1,4 +1,4 @@
-# DevLab - Thêta 
+# DevLab - Thêta - Pour l'amour du bien
 
 Thêta est un projet de classe, réalisé afin de sensibiliser les personnes sur les problématiques étudiantes.
 

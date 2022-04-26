@@ -45,7 +45,9 @@
             </ul>
         </nav>
 
-        <header>
+        <section class="first header">
+            <img class="logo" src="./assets/images/logo.png" alt="logo du site">
+            
             <div class="header-contain">
                 <h1 class="ml7" id="title">
                     <span class="text-wrapper">
@@ -54,14 +56,7 @@
                 </h1>
 
                 <p>
-                    Êtes-vous étudiant ? Avez-vous déjà ressenti du stress ? Si
-                    oui, vous n’êtes pas seul, bien au contraire. En effet,
-                    selon une étude menée par la SMEREP en 2019, 9 étudiants sur
-                    10 seraient victimes de stress. Parmi ces étudiants, 25%
-                    sont stressés en permanence et 60% se sentent « débordés,
-                    voire submergés par leur quotidien. Plus inquiétant encore,
-                    22% révèlent avoir déjà eu des pensées suicidaires. Un
-                    nombre s’élevant à 27% chez les femmes.
+                    Le suicide est la deuxième cause de mortalité chez les jeunes. Parmi ces jeunes, les étudiants sont tout particulièrement touchés. Plusieurs facteurs connus favorisent les risques de comportements suicidaires chez les étudiants. Parmi ces facteurs : le stress. C’est pour cela que nous avons souhaiter créer Semicolon. Prévenir certains signes avant-coureurs, c’est empêcher certains malheurs. Semicolon veut dire point-virgule en français mais c’est bien plus que ça. En effet, comme l’explique Amy Bleuel, fondatrice de Project Semicolon, une association à but non-lucratif qui vise à la prévention suicidaire « un point-virgule est utilisé quand un·e auteur·e pourrait mettre fin à une phrase, mais décide de ne pas le faire. L’auteur·e, c’est vous, et la phrase, c’est votre vie ». Le point-virgule est un signe, un message, une lueur d’espoir pour toute personne souffrant de dépression, de maladies mentales et d’automutilation. Le point-virgule pour ne pas mettre de point final à sa vie. Afin d’encourager ce message, plus aucune de nos phrases/paragraphes ne se terminera par un point mais par un point-virgule;
                 </p>
 
                 <div class="buttons">
@@ -75,12 +70,12 @@
                     >
                 </div>
             </div>
-        </header>
+        </section>
 
-        <section id="fatigue">
-            <h2>LA FATIGUE</h2>
+        <section class="section section-to-anim second" id="fatigue" data-scroll="horizontal" data-trigger-key="first">
+            <h2 class="title">LA FATIGUE</h2>
 
-            <p>
+            <p class="text1">
                 Parce que les étudiants sont, en général, jeunes et en bonne
                 santé, on assume que ces derniers doivent mener une vie plus
                 facile qu’un employé et peuvent réussir leurs études sans
@@ -98,7 +93,7 @@
                 particulièrement en médecine (Source : rtbf.be).
             </p>
 
-            <p>
+            <p class="text2">
                 Ne pas se rendre compte de la dégradation de son état et
                 s’acharner pour continuer à répondre à toutes les demandes fait
                 partie de la maladie de l’épuisement. S’ensuit alors un cercle
@@ -108,10 +103,21 @@
             </p>
         </section>
 
-        <section id="stress">
-            <h2>LE STRESS</h2>
+        <section class="section section-to-anim third" id="stress" data-scroll="vertical" data-trigger-key="second">
+            <h2 class="title">LE STRESS</h2>
 
-            <p>
+            <p class="text1">
+                Êtes-vous étudiant ? Avez-vous déjà ressenti du stress ? Si
+                oui, vous n’êtes pas seul, bien au contraire. En effet,
+                selon une étude menée par la SMEREP en 2019, 9 étudiants sur
+                10 seraient victimes de stress. Parmi ces étudiants, 25%
+                sont stressés en permanence et 60% se sentent « débordés,
+                voire submergés par leur quotidien. Plus inquiétant encore,
+                22% révèlent avoir déjà eu des pensées suicidaires. Un
+                nombre s’élevant à 27% chez les femmes.
+            </p>
+
+            <p class="text2">
                 Les étudiants submergés par le stress auront beaucoup de mal à
                 se sortir de cette situation. En effet, ils éprouveront des
                 difficultés d’attention, de concentration, de mémorisation et
@@ -120,19 +126,20 @@
                 cercle vicieux. La santé mentale et physique de ces étudiants en
                 pâtira grandement.
             </p>
+
         </section>
 
-        <section id="argent">
-            <h2>L'ARGENT</h2>
+        <section class="section section-to-anim fourth" id="argent" data-scroll="horizontal" data-trigger-key="third">
+            <h2 class="title">L'ARGENT</h2>
 
-            <p>
+            <p class="text1">
                 C’est toujours le même problème quand on est étudiant : on ne
                 sait jamais comment on va pouvoir gagner de l’argent pour
                 financer ses études. Même si certains y arrivent, il est
                 toujours difficile de gérer étude et travail.
             </p>
 
-            <p>
+            <p class="text2">
                 Si un étudiant est entièrement responsable, son budget moyen en
                 France est de 635 euros. Le loyer étant la plus grosse charge
                 (388 euros par mois en moyenne une fois les aides déduites),
@@ -149,6 +156,7 @@
 
         <!-- gsap -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
         <!-- js -->
         <script src="assets/script/script.js"></script>
     </body>
