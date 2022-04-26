@@ -111,17 +111,9 @@ button {
 
 .header-row {
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  top: 10px;
+  right: 10px;
   z-index: 99;
-}
-.header-row .logo img {
-  width: 50px;
-  margin: 20px 50px;
 }
 .header-row .menu-toggle {
   background: transparent;
@@ -133,7 +125,6 @@ button {
 .header-row .menu-toggle .hamburger path {
   fill: none;
   stroke: #fff;
-  stroke-linecap: round;
 }
 
 header {
@@ -145,12 +136,12 @@ header {
   padding-left: 15%;
   flex-direction: column;
   color: #fff;
-  /*.logo{
-      position: fixed;
-      width: 40px;
-      top: 20px;
-      left: 20px;
-  }*/
+}
+header .logo {
+  position: fixed;
+  width: 40px;
+  top: 20px;
+  left: 20px;
 }
 header .header-contain {
   width: 70%;
@@ -277,12 +268,12 @@ header .scroll-button_bottom p {
   line-height: 1;
   letter-spacing: 5px;
   color: transparent;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 1px #fff;
 }
 .fullpage-menu .fullpage-menu-inner nav ul li a span {
   position: relative;
   display: block;
-  font-family: "Exo", sans-serif;
+  font-family: "Roboto", bolder;
   font-size: 35px;
   z-index: 99;
 }
@@ -298,7 +289,7 @@ header .scroll-button_bottom p {
   z-index: 1;
   height: 0;
   overflow: hidden;
-  transition: 400ms linear 0s;
+  transition: 0.3s linear 0s;
 }
 .fullpage-menu .fullpage-menu-inner nav ul .li1:hover ~ .bg1,
 .fullpage-menu .fullpage-menu-inner nav ul .li2:hover ~ .bg2,
@@ -306,7 +297,6 @@ header .scroll-button_bottom p {
 .fullpage-menu .fullpage-menu-inner nav ul .li4:hover ~ .bg4 {
   opacity: 1;
   transform: translateY(0%);
-  transition: 1s ease-in-out;
 }
 .fullpage-menu .fullpage-menu-inner nav ul .bg {
   position: absolute;
@@ -332,7 +322,7 @@ header .scroll-button_bottom p {
   background-size: cover;
   opacity: 0;
   transform: translateX(-10%);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .bg2 {
@@ -344,7 +334,7 @@ header .scroll-button_bottom p {
   background-size: cover;
   opacity: 0;
   transform: translateX(10%);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .bg3 {
@@ -356,7 +346,7 @@ header .scroll-button_bottom p {
   background-size: cover;
   opacity: 0;
   transform: translateX(-10%);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .bg4 {
@@ -368,7 +358,7 @@ header .scroll-button_bottom p {
   background-size: cover;
   opacity: 0;
   transform: translateX(10%);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .section {
@@ -427,11 +417,11 @@ header .scroll-button_bottom p {
   transform: translateY(-30px);
 }
 
-#fatigue {
+#stress {
   background: orange;
 }
 
-#stress {
+#fatigue {
   background: #ff7700;
 }
 

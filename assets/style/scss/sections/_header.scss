@@ -3,17 +3,9 @@
 
 .header-row {
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    top: 10px;
+    right: 10px;
     z-index: 99;
-    .logo img{
-        width: 50px;
-        margin: 20px 50px;
-    }
     .menu-toggle {
         background: transparent;
         border: none;
@@ -23,7 +15,6 @@
         .hamburger path {
             fill: none;
             stroke: #fff;
-            stroke-linecap: round;
         }
     }
 }
@@ -37,12 +28,12 @@ header{
     padding-left: 15%;
     flex-direction: column;
     color: $color-white;
-    /*.logo{
+    .logo{
         position: fixed;
         width: 40px;
         top: 20px;
         left: 20px;
-    }*/
+    }
     .header-contain{
         width: 70%;
         min-width: 300px;
