@@ -17,7 +17,6 @@ html, body {
   width: 100%;
   height: 100vh;
   background: #121212;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -132,7 +131,7 @@ header .header-contain {
 header .header-contain p {
   margin: 30px 0;
 }
-header .scroll-button {
+header .scroll-button_bottom {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -143,15 +142,15 @@ header .scroll-button {
   align-items: center;
   cursor: pointer;
 }
-header .scroll-button .arrow-scroll-button {
+header .scroll-button_bottom .arrow-scroll-button {
   margin: 20px;
   width: 30px;
   height: 30px;
-  border: 1px #fff;
+  border: 2px #fff;
   border-style: none solid solid none;
   transform: rotate(45deg);
 }
-header .scroll-button p {
+header .scroll-button_bottom p {
   font-size: 1.2rem;
   color: #fff;
   font-family: "Roboto", lighter;
@@ -204,8 +203,7 @@ header .scroll-button p {
 @media screen and (max-width: 700px) {
   .section {
     padding: 50px;
-    justify-content: flex-start;
-    height: fit-content;
+    justify-content: center;
   }
 }
 .section h2 {
@@ -258,7 +256,7 @@ header .scroll-button p {
 }
 
 #argent {
-  background: #cd0000;
+  background: #c71a1a;
 }
 
 /*# sourceMappingURL=main.css.map */

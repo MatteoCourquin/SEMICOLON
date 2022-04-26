@@ -11,8 +11,7 @@
     padding: 150px;
     @media screen and (max-width : 700px) {
         padding: 50px;
-        justify-content: flex-start;
-        height: fit-content;
+        justify-content: center;
     }
     h2{
         align-self: flex-start;

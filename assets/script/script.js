@@ -77,14 +77,19 @@ function getCurrenAnimation(fnstring) {
 
 
 
-const btnScroll = document.querySelector('.scroll-button')
+// Scroll 
 
-btnScroll.addEventListener('click', () => {
-    let scrollDistance = document.documentElement.clientHeight;
-    window.scrollBy({
-        top: scrollDistance,
-        behavior: 'smooth'
-    });
-});
+const btnsScroll = document.querySelectorAll('.scroll-button')
+
+btnsScroll.forEach(btnScroll => {
+    
+    btnScroll.addEventListener('click', () => {
+        let scrollDistance = document.documentElement.clientHeight;
+        window.scrollBy({
+            top: scrollDistance,
+            behavior: 'smooth'
+        })
+    })
+})
 
 gsap.to('.arrow-scroll-button', {y: '-10', repeat: -1, yoyo: true, duration: 0.6, ease: 'power1.inOut'})
