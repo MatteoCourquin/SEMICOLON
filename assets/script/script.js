@@ -45,7 +45,8 @@ sections.forEach(section => {
 
     ScrollTrigger.create({
         trigger: section,
-        start: "top top",
+        markers: true,
+        start: "bottom bottom",
         pin: true,
         pinSpacing: false,
         scrub: 1,

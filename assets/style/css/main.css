@@ -373,7 +373,8 @@ header .scroll-button_bottom p {
 @media screen and (max-width: 700px) {
   .section {
     padding: 50px;
-    justify-content: center;
+    justify-content: flex-start;
+    height: max-content;
   }
 }
 .section h2 {
