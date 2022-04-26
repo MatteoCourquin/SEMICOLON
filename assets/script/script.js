@@ -1,8 +1,8 @@
-var textWrapper = document.querySelector(".ml7 .letters");
+var textWrapper = document.querySelector(".ml7 .letters")
 textWrapper.innerHTML = textWrapper.textContent.replace(
     /([^\x00-\x80]|\w)/g,
     "<span class='letter'>$&</span>"
-);
+)
 
 anime.timeline({ loop: false }).add({
     targets: ".ml7 .letter",
@@ -15,4 +15,4 @@ anime.timeline({ loop: false }).add({
     delay: function (el, i) {
         return 900 + 50 * i;
     },
-});
+})
