@@ -49,6 +49,7 @@ sections.forEach(section => {
         pin: true,
         pinSpacing: false,
         scrub: 1,
+        snap: 1,
         onEnter: ({ progress, direction, isActive }) => {
             getCurrenAnimation(currentFunction)
             console.log('enter down ' + currentSection)
@@ -58,40 +59,32 @@ sections.forEach(section => {
             console.log('enter up ' + currentSection)
         },
     })
-
-    console.log(`#${section.id} .title`)
-})
-
-
-ScrollTrigger.create({
-    snap: 1 / 3
 })
 
 function getCurrenAnimation(fnstring) {
     switch (fnstring) {
-        case "first": first(); break;
-        case "second": second(); break;
-        case "third": third(); break;
-        case "fourth": fourth(); break;
+        case "first": 
+            currentSection = 'first'; 
+            break;
+        case "second":
+            currentSection = 'second'; 
+            break;
+        case "third": 
+            currentSection = 'third'; 
+            break;
     }
 }
 
-function first() {
-    currentSection = 'first'
-    // timeline1.play()
-}
 
-function second() {
-    currentSection = 'second'
-    // timeline2.play()
-}
 
-function third() {
-    currentSection = 'third'
-    // timeline3.play()
-}
+const btnScroll = document.querySelector('.scroll-button')
 
-function fourth() {
-    currentSection = 'fourth'
-    // timeline4.play()
-}
+btnScroll.addEventListener('click', () => {
+    let scrollDistance = document.documentElement.clientHeight;
+    window.scrollBy({
+        top: scrollDistance,
+        behavior: 'smooth'
+    });
+});
+
+gsap.to('.arrow-scroll-button', {y: '-10', repeat: -1, yoyo: true, duration: 0.6, ease: 'power1.inOut'})
