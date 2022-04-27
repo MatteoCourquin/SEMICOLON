@@ -113,10 +113,6 @@ button {
   border-radius: 50%;
 }
 
-p::selection {
-  background-color: #fff;
-}
-
 .expand {
   animation: Anim2 0.5s;
   background: transparent;
@@ -172,6 +168,12 @@ p::selection {
   right: 10px;
   z-index: 99;
 }
+@media screen and (max-width: 700px) {
+  .header-row {
+    top: -20px;
+    right: -20px;
+  }
+}
 .header-row .menu-toggle {
   background: transparent;
   border: none;
@@ -193,6 +195,13 @@ header {
   padding-left: 15%;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 700px) {
+  header {
+    padding: 50px;
+    justify-content: flex-start;
+    height: max-content;
+  }
 }
 header .logo {
   position: fixed;
@@ -218,6 +227,11 @@ header .scroll-button_bottom {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  header .scroll-button_bottom {
+    display: none;
+  }
 }
 header .scroll-button_bottom .arrow-scroll-button {
   margin: 20px;
@@ -252,23 +266,16 @@ header .scroll-button_bottom p {
   line-height: 1em;
 }
 
-/*
-.nav-index{
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    // transform: translateX(-100%);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // width: 100%;
-    z-index: 99;
-}
-*/
 .nav-about .back-home {
   position: absolute;
   top: 30px;
   left: 30px;
+}
+@media screen and (max-width: 700px) {
+  .nav-about .back-home {
+    top: 10px;
+    left: 10px;
+  }
 }
 .nav-about .back-home img {
   width: 50px;

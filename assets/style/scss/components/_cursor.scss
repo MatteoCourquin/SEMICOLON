@@ -23,10 +23,6 @@
     }
 }
 
-p::selection{
-    background-color: $color-white;
-}
-
 .expand {
     animation: Anim2 .5s;
     background: transparent;

@@ -33,8 +33,7 @@ sections.forEach(section => {
             trigger: title,
             start: "top 60%",
             end: "bottom top",
-            markers: true,
-            toggleActions: "play reverse play reverse",
+            // markers: true,
         }
     })
     
