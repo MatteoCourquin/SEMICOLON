@@ -74,6 +74,18 @@ function getCurrenAnimation(fnstring) {
         case "third": 
             currentSection = 'third'; 
             break;
+        case "fourth":
+            currentSection = 'fourth';
+            break;
+        case "fifth":
+            currentSection = 'fifth';
+            break;
+        case "sixth":
+            currentSection = 'sixth';
+            break;
+        case "seventh":
+            currentSection = 'seventh';
+            break;
     }
 }
 

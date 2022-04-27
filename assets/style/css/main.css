@@ -28,13 +28,13 @@ body {
 
 .txt-link {
   text-decoration: none;
-  font-family: "Roboto", bolder;
+  font-family: "Exo", sans-serif;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
 }
 .txt-link:hover {
-  background: linear-gradient(0.25turn, orange, red);
+  background: linear-gradient(0.25turn, orange 0%, #d9143b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -44,7 +44,7 @@ li {
 }
 
 h1 {
-  font-family: "Roboto", bolder;
+  font-family: "Exo", sans-serif;
   color: #fff;
   position: relative;
   font-weight: 900;
@@ -52,14 +52,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", bolder;
+  font-family: "Exo", sans-serif;
   color: #fff;
   font-size: clamp(20px, 4vw, 100px);
 }
 
 p {
   color: #ffffff4d;
-  font-family: "Roboto", lighter;
+  font-family: "Exo", sans-serif;
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 0;
@@ -67,7 +67,7 @@ p {
 
 a {
   color: #fff;
-  font-family: "Roboto", lighter;
+  font-family: "Exo", sans-serif;
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ button {
 }
 
 .btn-orange {
-  background: linear-gradient(0.25turn, orange, red);
+  background: linear-gradient(0.25turn, orange 0%, #d9143b 100%);
 }
 
 .btn-transparent {
@@ -140,6 +140,10 @@ button {
 .card-graph-percent .circle-svg path.around {
   stroke-width: 0.1;
   stroke: #c4c4c4;
+}
+
+.graph-hover {
+  border-bottom: 2px dotted white;
 }
 
 .new-cursor {
@@ -399,7 +403,7 @@ header .scroll-button_bottom p {
 .fullpage-menu .fullpage-menu-inner nav ul li a span {
   position: relative;
   display: block;
-  font-family: "Roboto", bolder;
+  font-family: "Exo", sans-serif;
   font-size: 35px;
   z-index: 99;
 }
@@ -494,7 +498,7 @@ header .scroll-button_bottom p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 150px;
+  padding: 100px;
 }
 @media screen and (max-width: 700px) {
   .section {
@@ -512,9 +516,9 @@ header .scroll-button_bottom p {
   }
 }
 .section p {
-  font-family: "Roboto", lighter;
+  font-family: "Exo", sans-serif;
   color: #fff;
-  width: 50%;
+  width: 60%;
 }
 @media screen and (max-width: 1000px) {
   .section p {
@@ -548,12 +552,28 @@ header .scroll-button_bottom p {
   background: orange;
 }
 
+#sol_stress {
+  background: #f76b1c;
+}
+
 #fatigue {
-  background: #ff7700;
+  background: #d90930;
+}
+
+#sol_fatigue {
+  background: orange;
 }
 
 #argent {
-  background: #c71a1a;
+  background: #f76b1c;
+}
+
+#sol_argent {
+  background: #d90930;
+}
+
+#ccl {
+  background: #121212;
 }
 
 .semicolon {
