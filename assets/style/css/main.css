@@ -209,6 +209,14 @@ header .logo {
   top: 20px;
   left: 20px;
 }
+@media screen and (max-width: 700px) {
+  header .logo {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+  }
+}
 header .header-contain {
   width: 70%;
   min-width: 300px;
