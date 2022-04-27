@@ -1,0 +1,54 @@
+// **** HOVER GRAPH **** //
+// ===================== //
+
+@keyframes progress {
+    0% {
+        display: block;
+        stroke-dasharray: 0 100;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.graph-insert{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.card-graph-percent{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 2px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    p{
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        color: $color-white;
+        font-size: 1.5rem;
+    }
+    .circle-svg {
+        width: 100px;
+        path.percent {
+            stroke: $color-black;
+            fill: none;
+            stroke-width: 1;
+            /* stroke-linecap: round; */
+            animation: progress 1s ease-out forwards;
+        }
+        path.around {
+            stroke-width: 0.1;
+            stroke: #c4c4c4;
+        }  
+    }
+}
