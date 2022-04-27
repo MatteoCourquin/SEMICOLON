@@ -89,27 +89,25 @@ button {
 .new-cursor {
   position: absolute;
   z-index: 9999;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border: 1px solid;
   border-color: transparent;
   border-radius: 50%;
   pointer-events: none;
   background-color: #ffff;
   mix-blend-mode: difference;
-  transition: 0.2s;
 }
 
 .circle {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   position: absolute;
   z-index: 9999;
   border: 3px solid rgba(51, 51, 51, 0.6);
   border-radius: 50%;
   background-color: transparent;
   pointer-events: none;
-  transition: 0.1s;
 }
 
 div.clickEffect {
