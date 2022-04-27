@@ -142,9 +142,9 @@ button {
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
 }
 .about .card-student {
-  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
