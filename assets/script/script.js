@@ -32,7 +32,9 @@ sections.forEach(section => {
         scrollTrigger: {
             trigger: title,
             start: "top 60%",
-            end: "bottom top"
+            end: "bottom top",
+            markers: true,
+            toggleActions: "play reverse play reverse",
         }
     })
     
@@ -45,7 +47,7 @@ sections.forEach(section => {
 
     ScrollTrigger.create({
         trigger: section,
-        markers: true,
+        // markers: true,
         start: "bottom bottom",
         pin: true,
         pinSpacing: false,
