@@ -140,6 +140,7 @@ button {
   }
 }
 .about {
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
@@ -275,6 +276,8 @@ header .scroll-button_bottom p {
 }
 
 .nav-about .back-home {
+  z-index: 999;
+  cursor: pointer;
   position: absolute;
   top: 30px;
   left: 30px;

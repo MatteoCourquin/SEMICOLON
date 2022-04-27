@@ -3,6 +3,8 @@
 
 .nav-about{
     .back-home{
+        z-index: 999;
+        cursor: pointer;
         position: absolute;
         top: 30px;
         left: 30px;
