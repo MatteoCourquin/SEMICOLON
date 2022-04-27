@@ -19,6 +19,11 @@ html, body {
   height: 100vh;
   background: #121212;
   margin: 0 auto;
+  cursor: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .txt-link {
@@ -87,55 +92,55 @@ button {
 }
 
 .new-cursor {
-  position: absolute;
   z-index: 9999;
-  width: 100px;
-  height: 100px;
-  border: 1px solid;
-  border-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffffff4d;
   border-radius: 50%;
-  pointer-events: none;
-  background-color: #ffff;
-  mix-blend-mode: difference;
-  transition: 0.2s;
-}
-
-.circle {
-  width: 120px;
-  height: 120px;
   position: absolute;
-  z-index: 9999;
-  border: 3px solid rgba(51, 51, 51, 0.6);
-  border-radius: 50%;
-  background-color: transparent;
+  animation: Anim1 1s infinite alternate;
   pointer-events: none;
-  transition: 0.1s;
 }
-
-div.clickEffect {
-  position: fixed;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: #FFFFFF;
+.new-cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background: #fff;
   border-radius: 50%;
-  animation: clickEffect 0.4s ease-out;
-  z-index: 99999;
 }
 
-@keyframes clickEffect {
+p::selection {
+  background-color: #fff;
+}
+
+.expand {
+  animation: Anim2 0.5s;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+@keyframes Anim1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes Anim2 {
   0% {
-    opacity: 1;
-    width: 0.5em;
-    height: 0.5em;
-    margin: -0.25em;
-    border-width: 0.5em;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
   }
   100% {
-    opacity: 0.2;
-    width: 15em;
-    height: 15em;
-    margin: -7.5em;
-    border-width: 0.03em;
+    transform: scale(1);
+    opacity: 0;
   }
 }
 .about {

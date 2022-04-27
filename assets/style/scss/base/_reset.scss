@@ -12,4 +12,8 @@ html, body {
     height: 100vh;
     background: #121212;
     margin: 0 auto;
+    cursor: none;
+}
+body{
+    overflow-x: hidden;
 }

@@ -1,20 +1,19 @@
-const cursor = document.querySelector('.new-cursor');
+// **** CURSOR ****
+// ================
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', 'top:'+(e.pageY - 50)+"px; left:"+(e.pageX - 50)+"px;")
-})
+const cursor = document.querySelector(".new-cursor");
 
-const circle = document.querySelector('.circle');
+document.addEventListener("mousemove", (e) => {
+    cursor.setAttribute(
+        "style",
+        "top:" + (e.pageY - 20) + "px; left:" + (e.pageX - 20) + "px;"
+    );
+});
 
-document.addEventListener('mousemove', e => {
-    circle.setAttribute('style', 'top:'+(e.pageY - 60)+"px; left:"+(e.pageX - 60)+"px;")
-})
+document.addEventListener("click", () => {
+    cursor.classList.add("expand");
 
-function clickEffect(e){
-    var d=document.createElement("div");
-    d.className="clickEffect";
-    d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
-    document.body.appendChild(d);
-    d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
-}
-document.addEventListener('click',clickEffect);
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500);
+});
