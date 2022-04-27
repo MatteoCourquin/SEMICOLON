@@ -10,7 +10,7 @@
     position: absolute;
     animation: Anim1 1s infinite alternate;
     pointer-events: none;
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         top: 50%;
@@ -21,10 +21,6 @@
         background: $color-white;
         border-radius: 50%;
     }
-}
-
-p::selection{
-    background-color: $color-white;
 }
 
 .expand {
@@ -53,3 +49,29 @@ p::selection{
         opacity:0;
     }
 }
+
+
+div.clickEffect{
+    position:fixed;
+    box-sizing:border-box;
+    border-style:solid;
+    border-color:#FFFFFF;
+    border-radius:50%;
+    animation:clickEffect 0.4s ease-out;
+    z-index:99999;
+}
+@keyframes clickEffect{
+    0%{
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5em;
+    }
+    100%{
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03em;
+    }
+}
+
