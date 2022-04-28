@@ -21,6 +21,9 @@
         background: $color-white;
         border-radius: 50%;
     }
+    @media screen and (max-width : 400px) {
+        display: none;
+    }
 }
 
 .expand {
