@@ -25,16 +25,15 @@ t1
     left: 40,
     position: "fixed",
     opacity: 1,
-    scale: .25,
+    scale: .20,
     ease: Expo.easeInOut
 })
 .to(".ringTwo", 4, {
     delay: 0.9,
     top: 40,
     left: 40,
-    position: "fixed",
-    opacity: 1,
-    scale: .25,
+    opacity: 0,
+    scale: .20,
     ease: Expo.easeInOut
 },"-=5");
 
