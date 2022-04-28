@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 150px;
+    padding: 100px;
     @media screen and (max-width : 700px) {
         padding: 50px;
         justify-content: flex-start;
@@ -21,9 +21,9 @@
         }
     }
     p{
-        font-family: $font-roboto-light;
+        font-family: $font-exo;
         color: $color-white;
-        width: 50%;
+        width: 60%;
         @media screen and (max-width : 1000px) {
             width: 70%;
         }
@@ -51,9 +51,21 @@
 #stress {
     background: $color-orange;
 }
-#fatigue{
+#sol_stress{
     background: $color-intermediate;
 }
-#argent{
+#fatigue{
     background: $color-red;
+}
+#sol_fatigue{
+    background: $color-orange;
+}
+#argent{
+    background: $color-intermediate;
+}
+#sol_argent{
+    background: $color-red;
+}
+#ccl{
+    background: #121212;
 }

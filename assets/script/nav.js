@@ -2,17 +2,17 @@ var menuToggle = document.getElementById("menuToggle");
 
 var menuBar = gsap.timeline({ paused: true});
 
-menuBar.to('.bar-1', .3,{
+menuBar.to('.bar-1', 1.3,{
     attr:{d: "M8,2 L2,8"},
     x:1,
     ease: Power2.easeInOut
 }, 'start')
 
-menuBar.to('.bar-2', .3,{
+menuBar.to('.bar-2', 1.3,{
     autoAlpha:0
 }, 'start')
 
-menuBar.to('.bar-3', .3,{
+menuBar.to('.bar-3', 1.3,{
     attr:{d: "M8,8 L2,2"},
     x:1,
     ease: Power2.easeInOut
@@ -29,13 +29,13 @@ navTl.to('.fullpage-menu', {
 }, "<");
 
 navTl.to('.menu-bg', {
-    duration: .3,
+    duration: .8,
     opacity:1,
     ease: Expo.easeInOut
 }, "<");
 
 navTl.from('.main-menu li a', {
-    duration: .3,
+    duration: .5,
     y:"100%",
     rotateY:30,
     stagger:0.2,
