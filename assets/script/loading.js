@@ -7,26 +7,26 @@ TweenMax.to(".loading-screen", 4, {
 var t1 = new TimelineMax();
 
 t1
-.from(".ringOne", 3, {
+.from(".ringOne", 4, {
     delay: 0.4,
     opacity: 0,
     top: -50,
     ease: Expo.easeInOut
 })
-.from(".ringTwo", 3, {
+.from(".ringTwo", 4, {
     delay: 0.9,
     opacity: 0,
     top: -50,
     ease: Expo.easeInOut
 }, "-=5")
-.to(".ringOne", 3, {
+.to(".ringOne", 4, {
     delay: 0.4,
     top: 40,
     left: 40,
     scale: .25,
     ease: Expo.easeInOut
 })
-.to(".ringTwo", 3, {
+.to(".ringTwo", 4, {
     delay: 0.9,
     top: 40,
     left: 40,
