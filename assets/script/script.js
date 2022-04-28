@@ -21,6 +21,7 @@ anime.timeline({ loop: false }).add({
 
 var currentSection = ''
 let sections = document.querySelectorAll('.section-to-anim')
+let arrowTop = document.querySelector('.arrow-scroll-button_top')
 
 sections.forEach(section => {
 
@@ -38,6 +39,7 @@ sections.forEach(section => {
     })
     
     TL
+    .to(arrowTop, {opacity: 1})
     .to(title, {duration: 1, opacity: 1, y: 0})
     .to(text1, {duration: 1, opacity: 1, y: 0}, '-=0.75')
     .to(text2, {duration: 1, opacity: 1, y: 0}, '-=0.75')
@@ -51,7 +53,7 @@ sections.forEach(section => {
         pin: true,
         pinSpacing: false,
         scrub: 1,
-        snap: 1,
+        // snap: 1,
         onEnter: ({ progress, direction, isActive }) => {
             getCurrenAnimation(currentFunction)
             console.log('enter down ' + currentSection)

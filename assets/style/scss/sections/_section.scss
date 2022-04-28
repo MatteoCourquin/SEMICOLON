@@ -48,24 +48,12 @@
     transform: translateY(-30px);
 }
 
-#stress {
-    background: $color-orange;
-}
-#sol_stress{
-    background: $color-intermediate;
-}
-#fatigue{
+.section-probleme{
     background: $color-red;
 }
-#sol_fatigue{
+.section-solution{
     background: $color-orange;
 }
-#argent{
-    background: $color-intermediate;
-}
-#sol_argent{
-    background: $color-red;
-}
-#ccl{
+#conclusion{
     background: #121212;
 }

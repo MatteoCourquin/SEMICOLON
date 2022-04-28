@@ -23,6 +23,7 @@ t1
     delay: 0.4,
     top: 40,
     left: 40,
+    position: "fixed",
     scale: .25,
     ease: Expo.easeInOut
 })
@@ -30,6 +31,7 @@ t1
     delay: 0.9,
     top: 40,
     left: 40,
+    position: "fixed",
     scale: .25,
     ease: Expo.easeInOut
 },"-=5");
