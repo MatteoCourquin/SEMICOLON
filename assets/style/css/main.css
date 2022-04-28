@@ -332,9 +332,7 @@ header {
 }
 @media screen and (max-width: 700px) {
   header {
-    padding: 50px;
-    justify-content: flex-start;
-    height: max-content;
+    padding: 100px 50px;
   }
 }
 header .logo {
@@ -570,8 +568,6 @@ header .arrow-scroll-button {
 @media screen and (max-width: 700px) {
   .section {
     padding: 50px;
-    justify-content: flex-start;
-    height: max-content;
   }
 }
 .section h2 {
