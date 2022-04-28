@@ -547,7 +547,6 @@ header .header-row .menu-toggle .hamburger path {
   display: flex;
   justify-content: center;
   padding-left: 15%;
-  padding: 100px 0;
   flex-direction: column;
   color: #fff;
 }
