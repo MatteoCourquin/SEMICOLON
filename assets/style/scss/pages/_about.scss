@@ -34,20 +34,22 @@
 }
 
 .about-text {
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .card-student{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50%;
+        width: auto;
+        margin: 0 5%;
 
-        p{
+        p {
             text-align: center;
             width: 100%;
             color: $color-white;
