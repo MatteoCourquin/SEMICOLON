@@ -70,7 +70,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   padding: 14px 30px;
   border: none;
   color: #fff;
@@ -151,13 +151,6 @@ button {
   height: 100vh;
   background: #0a0a0a;
   z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,118 +286,31 @@ div.clickEffect {
   height: 120px;
 }
 
-.header-row {
+header {
+  width: 100%;
+  padding: 10px;
   position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #121212 0%, #121212 50%, transparent 100%);
+  z-index: 9;
 }
-@media screen and (max-width: 700px) {
-  .header-row {
-    top: -20px;
-    right: -20px;
-  }
+header .logo {
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 40px;
+  opacity: 1;
 }
-.header-row .menu-toggle {
+header .header-row .menu-toggle {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
   text-decoration: none;
 }
-.header-row .menu-toggle .hamburger path {
+header .header-row .menu-toggle .hamburger path {
   fill: none;
   stroke: #fff;
-}
-
-header {
-  z-index: 10;
-  width: 100%;
-  height: auto;
-  min-height: 100% !important;
-  display: flex;
-  justify-content: center;
-  padding-left: 15%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  flex-direction: column;
-  color: #fff;
-}
-@media screen and (max-width: 700px) {
-  header {
-    padding: 100px 50px;
-  }
-}
-header .logo {
-  position: fixed;
-  width: 40px;
-  top: 70px;
-  left: 20px;
-  z-index: 9;
-  opacity: 1;
-}
-header .header-contain {
-  width: 70%;
-  min-width: 300px;
-  max-width: 1000px;
-}
-header .header-contain p {
-  margin: 30px 0;
-}
-header .arrow-scroll-button {
-  cursor: pointer;
-  position: fixed;
-  z-index: 9;
-  margin: 20px;
-  width: 30px;
-  height: 30px;
-  border: 2px #fff;
-  border-style: none solid solid none;
-  transform: rotate(45deg) translateX(-50%);
-  right: 50%;
-  bottom: 20px;
-}
-@media screen and (max-width: 700px) {
-  header .arrow-scroll-button {
-    display: none;
-  }
-}
-
-.ml7 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.7em;
-}
-.ml7 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-.ml7 .letter {
-  transform-origin: 0 100%;
-  display: inline-block;
-  line-height: 1em;
-  font-size: clamp(20px, 10vw, 100px);
-}
-
-.nav-about .back-home {
-  z-index: 999;
-  cursor: pointer;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-@media screen and (max-width: 700px) {
-  .nav-about .back-home {
-    top: 10px;
-    left: 10px;
-  }
-}
-.nav-about .back-home img {
-  width: 50px;
 }
 
 .fullpage-menu {
@@ -554,6 +460,87 @@ header .arrow-scroll-button {
   opacity: 0;
   transform: translateX(10%);
   transition: 0.3s ease-in-out;
+}
+
+.nav-about .back-home {
+  z-index: 999;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+@media screen and (max-width: 700px) {
+  .nav-about .back-home {
+    top: 10px;
+    left: 10px;
+  }
+}
+.nav-about .back-home img {
+  width: 50px;
+}
+
+.hero {
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  color: #fff;
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    padding: 100px 50px;
+  }
+}
+.hero .header-contain {
+  width: 70%;
+  min-width: 300px;
+  max-width: 1000px;
+}
+.hero .header-contain .ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.hero .header-contain .ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.hero .header-contain .ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+  font-size: clamp(20px, 10vw, 100px);
+}
+.hero .header-contain p {
+  margin: 30px 0;
+}
+.hero .arrow-scroll-button {
+  cursor: pointer;
+  position: fixed;
+  z-index: 9;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px #fff;
+  border-style: none solid solid none;
+  transform: rotate(45deg) translateX(-50%);
+  right: 50%;
+  bottom: 20px;
+}
+@media screen and (max-width: 700px) {
+  .hero .arrow-scroll-button {
+    display: none;
+  }
 }
 
 .section {
