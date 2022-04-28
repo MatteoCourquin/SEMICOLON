@@ -24,6 +24,7 @@ t1
     top: 40,
     left: 40,
     position: "fixed",
+    opacity: 1,
     scale: .25,
     ease: Expo.easeInOut
 })
@@ -32,6 +33,7 @@ t1
     top: 40,
     left: 40,
     position: "fixed",
+    opacity: 1,
     scale: .25,
     ease: Expo.easeInOut
 },"-=5");

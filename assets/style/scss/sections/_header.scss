@@ -43,6 +43,7 @@ header{
         top: 70px;
         left: 20px;
         z-index: 9;
+        opacity: 0.5;
     }
     .header-contain{
         width: 70%;
@@ -52,51 +53,21 @@ header{
             margin: 30px 0;
         }
     }
-    .scroll-button{
+    .arrow-scroll-button{
         cursor: pointer;
+        position: fixed;
+        z-index: 9;
+        margin: 20px;
+        width: 30px;
+        height: 30px;
+        border: 2px $color-white;
+        border-style: none solid solid none;
+        transform: translateX(-50%) rotate(45deg);
+        right: 50%;
+        bottom: 20px;
         @media screen and (max-width : 700px) {
             display: none;
         }
-        p{
-            font-size: 1.2rem;
-            color: $color-white;
-            font-family: $font-roboto-light;
-        }
-        .arrow-scroll-button{
-            margin: 20px;
-            width: 30px;
-            height: 30px;
-            border: 2px $color-white;
-            border-style: none solid solid none;
-        }
-        .arrow-scroll-button_top{
-            transform: rotate(-135deg);
-            opacity: 0;
-        }
-        .arrow-scroll-button_bottom{
-            transform: rotate(45deg);
-        }
-    }
-    .scroll-button_bottom{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        bottom: 20px;
-    }
-    .scroll-button_top{
-        position: fixed;
-        right: 20px;
-        z-index: 9;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        bottom: 20px;
     }
 }
 
