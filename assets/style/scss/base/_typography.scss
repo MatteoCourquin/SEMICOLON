@@ -24,7 +24,7 @@ h1{
     color: $color-white;
     position: relative;
     font-weight: 900;
-    font-size: 3.7em;
+    font-size: clamp(20px, 5vw, 100px);
 }
 h2{
     font-family: $font-exo;

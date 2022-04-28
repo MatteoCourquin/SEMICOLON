@@ -47,7 +47,7 @@ h1 {
   color: #fff;
   position: relative;
   font-weight: 900;
-  font-size: 3.7em;
+  font-size: clamp(20px, 5vw, 100px);
 }
 
 h2 {
@@ -359,7 +359,7 @@ header .arrow-scroll-button {
   height: 30px;
   border: 2px #fff;
   border-style: none solid solid none;
-  transform: translateX(-50%) rotate(45deg);
+  transform: rotate(45deg) translateX(-50%);
   right: 50%;
   bottom: 20px;
 }
@@ -386,6 +386,7 @@ header .arrow-scroll-button {
   transform-origin: 0 100%;
   display: inline-block;
   line-height: 1em;
+  font-size: clamp(20px, 10vw, 100px);
 }
 
 .nav-about .back-home {
