@@ -1,4 +1,4 @@
-var menuToggle = document.getElementById("menuToggle");
+var buttonsMenuToggle = document.querySelectorAll(".menu-toggle");
 
 var menuBar = gsap.timeline({ paused: true});
 
@@ -44,7 +44,9 @@ navTl.from('.main-menu li a', {
 
 navTl.reverse();
 
-menuToggle.addEventListener('click', function(){
-    menuBar.reversed(!menuBar.reversed());
-    navTl.reversed(!navTl.reversed());
-})
+buttonsMenuToggle.forEach(menuToggle => {
+    menuToggle.addEventListener('click', () =>{
+        menuBar.reversed(!menuBar.reversed());
+        navTl.reversed(!navTl.reversed());
+    })
+});
