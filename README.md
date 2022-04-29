@@ -10,6 +10,12 @@ Clone this repository :
 git clone git@github.com:MatteoCourquin/Stress-Theta.git
 ```
 
+Launch SASS : 
+
+```bash
+sass --watch assets/style/scss/main.scss:assets/style/css/main.css
+```
+
 
 ## Contributing
 BRIOLON Augustin
