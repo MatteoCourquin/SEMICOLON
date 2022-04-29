@@ -1,5 +1,5 @@
-// **** CURSOR ****
-// ================
+// **** CURSOR **** //
+// ================ //
 
 const cursor = document.querySelector(".new-cursor");
 

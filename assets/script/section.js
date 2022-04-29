@@ -1,3 +1,6 @@
+// **** SECTION **** //
+// ================= //
+
 var textWrapper = document.querySelector(".ml7 .letters")
 textWrapper.innerHTML = textWrapper.textContent.replace(
     /([^\x00-\x80]|\w)/g,

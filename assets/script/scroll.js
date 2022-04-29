@@ -1,3 +1,5 @@
+// **** SCROLL **** //
+// ================ //
 
 let btnScroll = document.querySelector('.arrow-scroll-button')
 let scrollButton = document.querySelector('.scroll-button')

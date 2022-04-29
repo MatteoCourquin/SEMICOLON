@@ -1,3 +1,6 @@
+// **** GRAPH HOVER **** //
+// ===================== //
+
 
 let graphHover = document.querySelectorAll('.graph-hover');
 let graphInsert = document.querySelector('.graph-insert');

@@ -1,3 +1,6 @@
+// **** NAV **** //
+// ============= //
+
 var buttonsMenuToggle = document.querySelectorAll(".menu-toggle");
 
 var menuBar = gsap.timeline({ paused: true});
