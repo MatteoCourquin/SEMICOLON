@@ -13,6 +13,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
+    @media screen and (max-width : 700px) {
+        grid-template-columns: 1fr;
+    }
     
     .card-student{
         display: flex;
@@ -20,6 +23,10 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+
+        .link-github{
+            margin: 10px;
+        }
 
         h2, p{
             text-align: center;

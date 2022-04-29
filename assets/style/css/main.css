@@ -299,12 +299,20 @@ div.clickEffect {
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
 }
+@media screen and (max-width: 700px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
 .about .card-student {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+.about .card-student .link-github {
+  margin: 10px;
 }
 .about .card-student h2, .about .card-student p {
   text-align: center;
