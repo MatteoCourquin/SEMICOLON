@@ -310,6 +310,7 @@ div.clickEffect {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 20px;
 }
 .about .card-student .link-github {
   margin: 10px;
