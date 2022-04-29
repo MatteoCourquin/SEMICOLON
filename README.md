@@ -7,7 +7,7 @@ Thêta est un projet de classe, réalisé afin de sensibiliser les personnes sur
 Clone this repository : 
 
 ```bash
-git clone git@github.com:MatteoCourquin/Stress-Theta.git
+git clone git@github.com:MatteoCourquin/SEMICOLON.git
 ```
 
 Launch SASS : 
