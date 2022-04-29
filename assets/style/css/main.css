@@ -7,6 +7,51 @@
     transform: rotate(360deg);
   }
 }
+@keyframes Anim1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes Anim2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    width: 0.5em;
+    height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
+  }
+  100% {
+    opacity: 0.2;
+    width: 15em;
+    height: 15em;
+    margin: -7.5em;
+    border-width: 0.03em;
+  }
+}
+@keyframes progress {
+  0% {
+    display: block;
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    display: none;
+  }
+}
 *, *::after, *::after {
   margin: 0;
   padding: 0;
@@ -109,15 +154,6 @@ a {
   }
 }
 
-@keyframes progress {
-  0% {
-    display: block;
-    stroke-dasharray: 0 100;
-  }
-  100% {
-    display: none;
-  }
-}
 .graph-insert {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -199,14 +235,6 @@ a {
   animation: rotateFirstRing 8s linear infinite;
 }
 
-@keyframes rotateFirstRing {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .new-cursor {
   z-index: 9999;
   width: 40px;
@@ -240,26 +268,6 @@ a {
   border: 1px solid #fff;
 }
 
-@keyframes Anim1 {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.7);
-  }
-}
-@keyframes Anim2 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
 div.clickEffect {
   position: fixed;
   box-sizing: border-box;
@@ -270,22 +278,6 @@ div.clickEffect {
   z-index: 99999;
 }
 
-@keyframes clickEffect {
-  0% {
-    opacity: 1;
-    width: 0.5em;
-    height: 0.5em;
-    margin: -0.25em;
-    border-width: 0.5em;
-  }
-  100% {
-    opacity: 0.2;
-    width: 15em;
-    height: 15em;
-    margin: -7.5em;
-    border-width: 0.03em;
-  }
-}
 .arrow-line {
   transform: rotate(-90deg);
   position: fixed;
@@ -474,7 +466,7 @@ header .header-row .menu-toggle .hamburger path {
   mix-blend-mode: difference;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
   .header-row {
     padding: 30px;
   }

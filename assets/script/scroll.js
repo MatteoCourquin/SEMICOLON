@@ -9,7 +9,7 @@ gsap.to(btnScroll, {
     right: 40,
     scrollTrigger: {
         trigger: firstSection,
-        toggleActions: "play play play reverse",
+        toggleActions: "play play play reverse", 
         start: 'top 90%',
         // markers: true,
     }

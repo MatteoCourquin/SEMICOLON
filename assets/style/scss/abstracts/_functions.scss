@@ -1,11 +1,61 @@
 // **** FUNCTIONS **** //
 // =================== //
 
+// Loader
 @keyframes rotateFirstRing {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+// Cursor
+@keyframes Anim1 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}
+
+@keyframes clickEffect{
+    0%{
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5em;
+    }
+    100%{
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03em;
+    }
+}
+
+// Graph Hover
+@keyframes progress {
+    0% {
+        display: block;
+        stroke-dasharray: 0 100;
+    }
+    100% {
+        display: none;
     }
 }
